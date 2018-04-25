@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import styled from "styled-components";
-import seachIcon from "../../../assets/search.svg";
+import seachIcon from "../../../assets/header/search.svg";
 
 const Search = () => (
   <Wrapper>

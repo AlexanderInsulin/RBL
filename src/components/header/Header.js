@@ -1,7 +1,7 @@
 // @flow
 import React from "react";
 import styled from "styled-components";
-import LogoImage from "../../assets/logo.png";
+import LogoImage from "../../assets/header/logo.png";
 import Search from "./search";
 import Navigation from "./navigation";
 import Auth from "./auth";
