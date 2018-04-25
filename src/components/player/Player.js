@@ -6,7 +6,7 @@ type Props = {
   open: Boolean
 };
 
-const Player = (props: Props) => <Wrapper />;
+const Player = (props: Props) => <div>{props.open ? <Wrapper /> : null}</div>;
 
 const Wrapper = styled.footer`
   height: 88px;

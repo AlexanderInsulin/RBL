@@ -9,7 +9,7 @@ const App = () => (
     <div>
       <Header />
       <Route exact path="/" component={MainPage} />
-      <Player />
+      <Player open />
     </div>
   </Router>
 );
