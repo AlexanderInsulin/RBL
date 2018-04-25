@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ControllButton = ({ icon }) => (
   <Button>
-    <img src={icon} />
+    <Image src={icon} />
   </Button>
 );
 
@@ -13,6 +13,13 @@ const Button = styled.button`
   border: 0;
   background-color: #000000;
   outline: none;
+`;
+
+const Image = styled.img`
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
 `;
 
 export default ControllButton;
