@@ -10,6 +10,7 @@ const Player = (props: Props) => <Wrapper />;
 
 const Wrapper = styled.footer`
   height: 88px;
+  width: 100%;
   position: fixed;
   bottom: 0px;
   left: 0px;

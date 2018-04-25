@@ -1,3 +1,4 @@
 import Header from "./header";
+import Player from "./player";
 
-export { Header };
+export { Header, Player };
