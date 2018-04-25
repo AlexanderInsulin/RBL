@@ -20,9 +20,9 @@ const Section = styled.div`
 const Header = () => (
   <div>
     <Wrapper>
-      <Section start>a</Section>
-      <Section center>b</Section>
-      <Section end>c</Section>
+      <Section start="true">a</Section>
+      <Section center="true">b</Section>
+      <Section end="true">c</Section>
     </Wrapper>
   </div>
 );
