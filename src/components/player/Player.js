@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Section } from "../shared";
 import Controll from "./controll";
 import SongInfo from "./songInfo";
+import TimeControll from "./timeControll";
 
 type Props = {
   open: Boolean
@@ -17,7 +18,9 @@ const Player = (props: Props) => (
           <Controll />
           <SongInfo artist="asd" track="asd" />
         </Section>
-        <Section end>2</Section>
+        <Section end>
+          <TimeControll />
+        </Section>
       </Wrapper>
     ) : null}
   </div>
