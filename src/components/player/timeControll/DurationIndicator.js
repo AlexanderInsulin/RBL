@@ -18,8 +18,8 @@ const Wrapper = styled.div`
   margin-left: 16px;
   margin-right: 16px;
   position: relative;
-  width: 60%,
   height: 2px;
+  flex: 1;
 `;
 
 const Indicator = styled.div`
