@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import LogoImage from "../../assets/logo.png";
 import Search from "./search";
+import Navigation from "./navigation";
 
 const Header = () => (
   <div>
@@ -11,7 +12,9 @@ const Header = () => (
         <Logo src={LogoImage} alt="RBL logo" />
         <Search />
       </Section>
-      <Section center="true">b</Section>
+      <Section center="true">
+        <Navigation />
+      </Section>
       <Section end="true">c</Section>
     </Wrapper>
   </div>
