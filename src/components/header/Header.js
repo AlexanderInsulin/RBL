@@ -10,9 +10,20 @@ const Wrapper = styled.header`
   background-color: #ffffff;
 `;
 
+const Section = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: ${props =>
+    props.start ? "flex-start" : props.center ? "center" : "flex-end"};
+`;
+
 const Header = () => (
   <div>
-    <Wrapper />
+    <Wrapper>
+      <Section start>a</Section>
+      <Section center>b</Section>
+      <Section end>c</Section>
+    </Wrapper>
   </div>
 );
 
