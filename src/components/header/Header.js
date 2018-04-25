@@ -4,6 +4,7 @@ import styled from "styled-components";
 import LogoImage from "../../assets/logo.png";
 import Search from "./search";
 import Navigation from "./navigation";
+import Auth from "./auth";
 
 const Header = () => (
   <div>
@@ -15,7 +16,9 @@ const Header = () => (
       <Section center="true">
         <Navigation />
       </Section>
-      <Section end="true">c</Section>
+      <Section end="true">
+        <Auth />
+      </Section>
     </Wrapper>
   </div>
 );
