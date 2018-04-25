@@ -1,3 +1,3 @@
 import Artist from "./Artist";
-
-export { Artist };
+import Section from "./Section";
+export { Artist, Section };

@@ -8,16 +8,21 @@ type Props = {
 };
 
 const Artist = (props: Props) => (
-  <Wrapper>
-    <Image src={props.img} />
-    <Label>{props.name}</Label>
-  </Wrapper>
+  <Container>
+    <Wrapper>
+      <Image src={props.img} />
+      <Label>{props.name}</Label>
+    </Wrapper>
+  </Container>
 );
+
+const Container = styled.div`
+  padding: 1%;
+`;
 
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 20px;
 `;
 
 const Image = styled.img`
