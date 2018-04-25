@@ -3,6 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import { Section } from "../shared";
 import Controll from "./controll";
+import SongInfo from "./songInfo";
 
 type Props = {
   open: Boolean
@@ -14,6 +15,7 @@ const Player = (props: Props) => (
       <Wrapper>
         <Section start>
           <Controll />
+          <SongInfo artist="asd" track="asd" />
         </Section>
         <Section end>2</Section>
       </Wrapper>
