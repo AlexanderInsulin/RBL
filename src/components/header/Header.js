@@ -2,12 +2,14 @@
 import React from "react";
 import styled from "styled-components";
 import LogoImage from "../../assets/logo.png";
+import Search from "./search";
 
 const Header = () => (
   <div>
     <Wrapper>
       <Section start="true">
         <Logo src={LogoImage} />
+        <Search />
       </Section>
       <Section center="true">b</Section>
       <Section end="true">c</Section>
