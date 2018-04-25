@@ -16,7 +16,9 @@ const Button = styled.button`
 `;
 
 const Image = styled.img`
+  cursor: pointer;
   opacity: 0.5;
+
   &:hover {
     opacity: 1;
   }
