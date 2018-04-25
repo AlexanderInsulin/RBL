@@ -8,7 +8,7 @@ const Header = () => (
   <div>
     <Wrapper>
       <Section start="true">
-        <Logo src={LogoImage} />
+        <Logo src={LogoImage} alt="RBL logo" />
         <Search />
       </Section>
       <Section center="true">b</Section>

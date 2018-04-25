@@ -1,9 +1,11 @@
 // @flow
 import React from "react";
 import styled from "styled-components";
+import seachIcon from "../../../assets/search.svg";
 
 const Search = () => (
   <Wrapper>
+    <Icon src={seachIcon} alt="search icon" />
     <Input placeholder="SEARCH" />
   </Wrapper>
 );
@@ -28,6 +30,12 @@ const Input = styled.input`
   &::placeholder {
     color: #9a9a9a;
   }
+`;
+
+const Icon = styled.img`
+  position: absolute;
+  top: 10px;
+  left: 16px;
 `;
 
 export default Search;
