@@ -1,5 +1,19 @@
+// @flow
 import React from "react";
 import styled from "styled-components";
+import LogoImage from "../../assets/logo.png";
+
+const Header = () => (
+  <div>
+    <Wrapper>
+      <Section start="true">
+        <Logo src={LogoImage} />
+      </Section>
+      <Section center="true">b</Section>
+      <Section end="true">c</Section>
+    </Wrapper>
+  </div>
+);
 
 const Wrapper = styled.header`
   position: fixed;
@@ -17,14 +31,11 @@ const Section = styled.div`
     props.start ? "flex-start" : props.center ? "center" : "flex-end"};
 `;
 
-const Header = () => (
-  <div>
-    <Wrapper>
-      <Section start="true">a</Section>
-      <Section center="true">b</Section>
-      <Section end="true">c</Section>
-    </Wrapper>
-  </div>
-);
+const Logo = styled.img`
+  width: 106px;
+  height: 39px;
+  object-fit: contain;
+  margin-left: 20px;
+`;
 
 export default Header;
