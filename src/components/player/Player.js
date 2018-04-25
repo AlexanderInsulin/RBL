@@ -5,6 +5,7 @@ import { Section } from "../shared";
 import Controll from "./controll";
 import SongInfo from "./songInfo";
 import TimeControll from "./timeControll";
+import AudioControll from "./audioControll";
 
 type Props = {
   open: Boolean
@@ -20,6 +21,7 @@ const Player = (props: Props) => (
         </Section>
         <Section end>
           <TimeControll />
+          <AudioControll />
         </Section>
       </Wrapper>
     ) : null}
