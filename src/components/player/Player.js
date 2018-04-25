@@ -1,12 +1,22 @@
 // @flow
 import React from "react";
 import styled from "styled-components";
+import { Section } from "../shared";
 
 type Props = {
   open: Boolean
 };
 
-const Player = (props: Props) => <div>{props.open ? <Wrapper /> : null}</div>;
+const Player = (props: Props) => (
+  <div>
+    {props.open ? (
+      <Wrapper>
+        <Section start>2</Section>
+        <Section end>2</Section>
+      </Wrapper>
+    ) : null}
+  </div>
+);
 
 const Wrapper = styled.footer`
   height: 88px;
