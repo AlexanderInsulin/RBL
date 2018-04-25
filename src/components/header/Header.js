@@ -5,6 +5,7 @@ import LogoImage from "../../assets/logo.png";
 import Search from "./search";
 import Navigation from "./navigation";
 import Auth from "./auth";
+import { Section } from "../shared";
 
 const Header = () => (
   <div>
@@ -30,13 +31,6 @@ const Wrapper = styled.header`
   height: 100px;
   width: 100%;
   background-color: #ffffff;
-`;
-
-const Section = styled.div`
-  display: flex;
-  flex: 1;
-  justify-content: ${props =>
-    props.start ? "flex-start" : props.center ? "center" : "flex-end"};
 `;
 
 const Logo = styled.img`
