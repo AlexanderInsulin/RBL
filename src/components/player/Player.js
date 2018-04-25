@@ -2,6 +2,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Section } from "../shared";
+import Controll from "./controll";
 
 type Props = {
   open: Boolean
@@ -11,7 +12,9 @@ const Player = (props: Props) => (
   <div>
     {props.open ? (
       <Wrapper>
-        <Section start>2</Section>
+        <Section start>
+          <Controll />
+        </Section>
         <Section end>2</Section>
       </Wrapper>
     ) : null}
